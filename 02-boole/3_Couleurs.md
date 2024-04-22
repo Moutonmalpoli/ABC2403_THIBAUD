@@ -29,3 +29,25 @@ Les propositions sont:
 
 ### Expression booléene
 P1 = P2.P3.P4
+
+## B. Le résultat attendu est Cr = couleur claire.
+Cr est clair si une seule des 2 couleurs additionnelles est blanche. Le blanc étant exclu de cette catégorie, la couleur  de base ne doit pas être blanche.
+Les propositions sont:
+* P1 : Cr = claire
+* P2 : Cb = rouge
+* P3 : Cad1 = blanc
+* P4 : Cad2 = blanc
+
+### Table de vérité
+|P2|P3|P4|P1|
+|0|0|0|0|
+|0|0|1|0|
+|0|1|0|0|
+|1|0|0|0|
+|1|1|0|1|
+|1|0|1|1|
+|0|1|1|0|
+|1|1|1|0|
+
+### Expression booléene
+P1= P2.P3(+)P4
