@@ -23,7 +23,7 @@ public class App {
 		
 		aireCirculaire = (Math.PI * Math.pow(rayonR, 2) * angleA ) /360;
 				
-		System.out.println("L'aire circulaire du rayon " + rayonR + "et de l'angle " + angleA + "Est:" + aireCirculaire + ".");
+		System.out.println("L'aire circulaire du rayon " + rayonR + " et de l'angle " + angleA + " Est: " + aireCirculaire + ".");
 		
 		sc.close();
 	}
