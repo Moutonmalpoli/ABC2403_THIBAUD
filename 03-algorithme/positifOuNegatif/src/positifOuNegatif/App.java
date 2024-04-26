@@ -20,6 +20,8 @@ public class App {
 		else {
 			System.out.println("Ce nombre est négatif");
 		}
+		
+		sc.close();
 	}
 
 }
