@@ -76,41 +76,42 @@ TRAITEMENT
 RESULTAT
     SI ageUser < 5 ALORS
     ECRIRE "Vous êtes trop jeune"
-    FINSI
-
-    SI ageUser = 5 OU ageUser = 6 ALORS
-    ECRIRE "Vous êtes débutant"
-    FINSI
-
-    SI ageUser = 7 OU ageUser = 8 ALORS
-    ECRIRE "Vous êtes poussin"
-    FINSI
-
-    SI ageUser = 9 OU ageUser =10 ALORS
-    ECRIRE "Vous êtes benjamin"
-    FINSI
-
-    SI ageUser = 11 OU ageUser = 12 ALORS
-    ECRIRE "Vous êtes pupille"
-    FINSI
     
-    SI ageUser = 13 OU ageUser = 14 ALORS
+
+    SINON SI ageUser = 5 OU ageUser = 6 ALORS
+    ECRIRE "Vous êtes débutant"
+    
+
+    SINON SI ageUser = 7 OU ageUser = 8 ALORS
+    ECRIRE "Vous êtes poussin"
+    
+
+    SINON SI ageUser = 9 OU ageUser =10 ALORS
+    ECRIRE "Vous êtes benjamin"
+    
+
+    SINON SI ageUser = 11 OU ageUser = 12 ALORS
+    ECRIRE "Vous êtes pupille"
+    
+    
+    SINON SI ageUser = 13 OU ageUser = 14 ALORS
     ECRIRE "Vous êtes minime"
-    FINSI
+    
 
-    SI ageUser = 15 OU ageUser = 16 ALORS
+    SINON SI ageUser = 15 OU ageUser = 16 ALORS
     ECRIRE "Vous êtes cadet"
-    FINSI
+    
 
-    SI ageUser = 17 OU ageUser = 18 ALORS
+    SINON SI ageUser = 17 OU ageUser = 18 ALORS
     ECRIRE "Vous êtes junior"
-    FINSI
+    
 
-    SI ageUser >= 19 ET ageUser =< 34 ALORS
+    SINON SI ageUser >= 19 ET ageUser =< 34 ALORS
     ECRIRE "Vous êtes sénior"
-    FINSI
+    
 
-    SI ageUser >= 35  ALORS
+    SINON SI ageUser >= 35  ALORS
     ECRIRE "Vous êtes vétéran"
     FINSI
+    
 ```
