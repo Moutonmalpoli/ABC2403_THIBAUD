@@ -27,6 +27,8 @@ ECRIRE "Les données saisies sont invalides"
 
 future = minutes + 3
 
+RESULTAT
+
 SI hour est supérieur à 24 OU future est supérieur à 60
 ALORS 
 ECRIRE "Horaire invalide"
