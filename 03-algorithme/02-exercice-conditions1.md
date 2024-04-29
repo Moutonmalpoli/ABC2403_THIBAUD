@@ -171,10 +171,10 @@ ECRIRE "Veuillez indiquer le nombre de photocopies."
 LIRE nbrPhotocopies
 
 SI nbrPhotocopies > 10
-ALORS facture - 0.01
+ALORS facture = 0.09
 
 SINON SI nbrphotocopies > 20
- facture - 0.02
+ facture = 0.08
 
 SINON 
 facture = 0.10 
