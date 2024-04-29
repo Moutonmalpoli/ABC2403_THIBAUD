@@ -24,6 +24,7 @@ LIRE minutes
 SI hour est supérieur à 24 OU minutes est supérieur à 60
 ALORS
 ECRIRE "Les données saisies sont invalides"
+FINSI
 
 future = minutes + 3
 
@@ -33,5 +34,5 @@ SI hour est supérieur à 24 OU future est supérieur à 60
 ALORS 
 ECRIRE "Horaire invalide"
 SINON ECRIRE "Dans 3 minutes il sera", hour ,"h", future "."
-
+FINSI
 ```
