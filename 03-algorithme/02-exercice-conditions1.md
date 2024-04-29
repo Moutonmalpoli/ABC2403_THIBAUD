@@ -128,27 +128,28 @@ Si les nombres saisis par l’utilisateur sont “hors limite”, le programme a
 
 ```
 VARIABLE
-hour est un NOMBRE ENTIER
-minutes est un NOMBRE ENTIER
-future est un NOMBRE ENTIER
+    hour est un NOMBRE ENTIER
+    minutes est un NOMBRE ENTIER
+    future est un NOMBRE ENTIER
 
 TRAITEMENT
-ECRIRE "Veuillez indiquer l'heure"
-LIRE hour
+    ECRIRE "Veuillez indiquer l'heure"
+    LIRE hour
 
-ECRIRE "Et combien de minutes ?"
-LIRE minutes
+    ECRIRE "Et combien de minutes ?"
+    LIRE minutes
 
-SI hour est supérieur à 24 OU minutes est supérieur à 60
-ALORS
-ECRIRE "Les données saisies sont invalides"
+    SI hour est supérieur à 24 OU minutes est supérieur à 60
+        ALORS
+        ECRIRE "Les données saisies sont invalides"
 
-future = minutes + 3
+    future = minutes + 3
 
-SI hour est supérieur à 24 OU future est supérieur à 60
-ALORS 
-ECRIRE "Horaire invalide"
-SINON ECRIRE "Dans 3 minutes il sera", hour ,"h", future "."
+    SI hour est supérieur à 24 OU future est supérieur à 60
+    ALORS 
+        ECRIRE "Horaire invalide"
+    SINON 
+        ECRIRE "Dans 3 minutes il sera", hour ,"h", future "."
 
 
 ```
@@ -161,27 +162,67 @@ Un magasin proposant un service de Réprographie facture 0.10€ les 10 premièr
 
 ```
 VARIABLE
-nbrPhotocopies est un NOMBRE ENTIER
-facture est un NOMBRE REEL
-factureClient est NOMBRE REEL
+    nbrPhotocopies est un NOMBRE ENTIER
+    facture est un NOMBRE REEL
+    factureClient est NOMBRE REEL
 
 TRAITEMENT
-facture = 0.10
-ECRIRE "Veuillez indiquer le nombre de photocopies."
-LIRE nbrPhotocopies
+    facture = 0.10
+    ECRIRE "Veuillez indiquer le nombre de photocopies."
+    LIRE nbrPhotocopies
 
-SI nbrPhotocopies > 10
-ALORS facture = 0.09
+    SI nbrPhotocopies > 10
+        ALORS facture = 0.09
 
-SINON SI nbrphotocopies > 20
- facture = 0.08
+    SINON SI nbrphotocopies > 20
+    facture = 0.08
 
-SINON 
-facture = 0.10 
+    SINON 
+    facture = 0.10 
 
-factureClient = nbrPhotocopies * facture
-
-ECRIRE "Pour", nbrphotocopie,"photocopies votre facture sera de ", factureClient, "euros", "."
+    factureClient = nbrPhotocopies * facture
+RESULTAT
+    ECRIRE "Pour", nbrphotocopie,"photocopies votre facture sera de ", factureClient, "euros", "."
 
 ```
 
+# Exercice 2.6 : Élections
+
+Les élections législatives, en Guignolerie Septentrionale, obéissent à la règle suivante :
+
+    Lorsque l’un des candidats obtient plus de 50% des suffrages, il est élu dès le premier tour.
+    En cas de deuxième tour, peuvent participer uniquement les candidats ayant obtenu au moins 12.5% des voix au premier tour.
+
+Vous devez écrire un algorithme qui permet la saisie des scores de quatre candidats au premier tour.
+
+Cet algorithme traitera ensuite le candidat numéro 1 (et uniquement lui) : il dira s’il est élu, battu, s’il se trouve en ballottage favorable (il participe au second tour en étant arrivé en tête à l’issue du premier tour) ou défavorable (il participe au second tour sans avoir été en tête au premier tour).
+```
+VARIABLES
+    scoreCandidat1 est un NOMBRE REEL
+    scoreCandidat2 est un NOMBRE REEL
+    scoreCandidat3 est un NOMBRE REEL
+    scoreCandidat4 est un NOMBRE REEL
+    votesTotal est un NOMBRE ENTIER
+
+TRAITEMENT
+
+    ECRIRE "Saisir le nombre de votes total"
+    LIRE votesTotal
+
+    
+
+
+    ECRIRE "Saisir le score du candidat n°1"
+    LIRE scoreCandidat1
+
+    ECRIRE "Saisir le score du candidat n°2"
+    LIRE scoreCandidat2
+
+    ECRIRE "Saisir le score du candidat n°3"
+    LIRE scoreCandidat3
+    
+    ECRIRE "Saisir le score du candidat n°4"
+    LIRE scoreCandidat4
+
+
+```
