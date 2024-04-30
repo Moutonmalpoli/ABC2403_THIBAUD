@@ -27,6 +27,7 @@ public class App {
 		sc.close();
 		
 		scoreDesAutres = scoreCandidat2 + scoreCandidat3 + scoreCandidat4 ;
+		
 		scoreTotal = scoreCandidat1 + scoreDesAutres;
 		
 		if (scoreTotal != 100) {
