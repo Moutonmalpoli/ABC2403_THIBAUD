@@ -199,6 +199,9 @@ Cet algorithme traitera ensuite le candidat numéro 1 (et uniquement lui) : il d
 ```
 VARIABLES
     scoreCandidat1 est un NOMBRE REEL
+    scoreCandidat2 est un NOMBRE REEL
+    scoreCandidat3 est un NOMBRE REEL
+    scoreCandidat4 est un NOMBRE REEL
     scoreDesAutres est un NOMBRE REEL
     scoreTotal est un NOMBRE REEL
 
@@ -207,8 +210,16 @@ TRAITEMENT
     ECRIRE "Saisir le score du candidat n°1"
     LIRE scoreCandidat1
 
-    ECRIRE "Saisir le score total des autres candidats"
-    LIRE scoreDesAutres
+    ECRIRE "Saisir le score du candidat n°2"
+    LIRE scoreCandidat2
+
+    ECRIRE "Saisir le score du candidat n°3"
+    LIRE scoreCandidat3
+
+    ECRIRE "Saisir le score du candidat n°4"
+    LIRE scoreCandidat4
+
+    scoredesAutres = scoreCandidat2 + scoreCandidat3 + scoreCandidat4 
 
     scoreTotal = scoreCandidat1 + scoreDesAutres
 
