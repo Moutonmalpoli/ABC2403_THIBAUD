@@ -20,13 +20,14 @@ public class App {
 		scoreTotal = scoreCandidat1 + scoreDesAutres;
 		
 		if (scoreTotal != 100) {
-			System.out.println("Le score doit être égal à 100%");
+			System.out.println("Le score doit être égal à 100%, réessayez");
 			
 		}
 		else {
 			System.out.println("Le score du candidat 1 est de " + scoreCandidat1 + "%");
 		}	
 		
+
 		if (scoreCandidat1 > 50 && scoreDesAutres <= 50) {
 			System.out.println("Le candidat 1 est élu.");
 		}
