@@ -199,30 +199,41 @@ Cet algorithme traitera ensuite le candidat numéro 1 (et uniquement lui) : il d
 ```
 VARIABLES
     scoreCandidat1 est un NOMBRE REEL
-    scoreCandidat2 est un NOMBRE REEL
-    scoreCandidat3 est un NOMBRE REEL
-    scoreCandidat4 est un NOMBRE REEL
-    votesTotal est un NOMBRE ENTIER
+    scoreDesAutres est un NOMBRE REEL
+    scoreTotal est un NOMBRE REEL
 
 TRAITEMENT
-
-    ECRIRE "Saisir le nombre de votes total"
-    LIRE votesTotal
-
-    
-
 
     ECRIRE "Saisir le score du candidat n°1"
     LIRE scoreCandidat1
 
-    ECRIRE "Saisir le score du candidat n°2"
-    LIRE scoreCandidat2
+    ECRIRE "Saisir le score total des autres candidats"
+    LIRE scoreDesAutres
 
-    ECRIRE "Saisir le score du candidat n°3"
-    LIRE scoreCandidat3
+    scoreTotal = scoreCandidat1 + scoreDesAutres
+
+    SI scoreTotal != 100
+        ALORS  
+        ECRIRE "Le score total doit être égal à 100%."
+    SINON
+        ECRIRE "Le score du candidat 1 est de " scoreCandidat1   "%"
+
+    SI scoreCandidat1 > 50 ET scoreDesAutres <= 50
+        ALORS
+        ECRIRE "Le candidat 1 est élu."
+
+    SINON SI scoreCandidat1 < 50 ET scoreCandidat1 => 12.5
+        ALORS
+        ECRIRE "Le candidat 1 passe au second tour." 
+
+    SINON 
+        ECRIRE "Le candidat 1 est éliminé.       
     
-    ECRIRE "Saisir le score du candidat n°4"
-    LIRE scoreCandidat4
-
-
+    SI scoreCandidat1 > scoreDesAutres ET scoreCandidat1 => 12.5 ET scoreCandidat1 <= 50
+        ALORS
+        ECRIRE "Le candidat 1 est en ballotage favorable."
+    
+    SINON SI scoreCandidat < scoreDesAutres ET scoreCandidat1 => 12.5 ET scoreCandidat1 < 50
+        ALORS
+        ECRIRE "Le candidat 1 est en ballotage défavorable."
 ```
