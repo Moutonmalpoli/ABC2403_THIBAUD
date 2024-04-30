@@ -4,6 +4,9 @@ public class App {
 
 	public static void main(String[] args) {
 		double scoreCandidat1;
+		double scoreCandidat2;
+		double scoreCandidat3;
+		double scoreCandidat4;
 		double scoreDesAutres;
 		double scoreTotal;
 		Scanner sc;
@@ -13,14 +16,21 @@ public class App {
 		System.out.println("Saisir le score du candidat n°1");
 		scoreCandidat1 = sc.nextDouble() ;
 		
-		System.out.println("Saisir le score des autres candidats");
-		scoreDesAutres = sc.nextDouble();
+		System.out.println("Saisir le score du candidat n°2");
+		scoreCandidat2 = sc.nextDouble() ;
+		
+		System.out.println("Saisir le score du candidat n°3");
+		scoreCandidat3 = sc.nextDouble() ;
+		
+		System.out.println("Saisir le score du candidat n°4");
+		scoreCandidat4 = sc.nextDouble() ;
 		sc.close();
 		
+		scoreDesAutres = scoreCandidat2 + scoreCandidat3 + scoreCandidat4 ;
 		scoreTotal = scoreCandidat1 + scoreDesAutres;
 		
 		if (scoreTotal != 100) {
-			System.out.println("Le score doit être égal à 100%, réessayez");
+			System.out.println("Le score doit être égal à 100, réessayez");
 			
 		}
 		else {
