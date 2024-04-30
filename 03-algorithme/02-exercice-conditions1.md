@@ -228,6 +228,7 @@ TRAITEMENT
 
     SINON 
         ECRIRE "Le candidat 1 est éliminé.       
+    FINSI
     
     SI scoreCandidat1 > scoreDesAutres ET scoreCandidat1 => 12.5 ET scoreCandidat1 <= 50
         ALORS
@@ -236,4 +237,5 @@ TRAITEMENT
     SINON SI scoreCandidat < scoreDesAutres ET scoreCandidat1 => 12.5 ET scoreCandidat1 < 50
         ALORS
         ECRIRE "Le candidat 1 est en ballotage défavorable."
+    FINSI    
 ```
