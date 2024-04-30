@@ -226,15 +226,14 @@ TRAITEMENT
         ALORS
         ECRIRE "Le candidat 1 passe au second tour." 
 
-    SINON 
-        ECRIRE "Le candidat 1 est éliminé.       
-    FINSI
+    SINON SI scoreCandidat < 12.5
+	 ECRIRE "Le candidat 1 est éliminé."
 
-    SI scoreCandidat1 > scoreDesAutres ET scoreCandidat1 => 12.5 ET scoreCandidat1 <= 50
+    SINON SI scoreCandidat1 > scoreDesAutres 
         ALORS
         ECRIRE "Le candidat 1 est en ballotage favorable."
     
-    SINON SI scoreCandidat < scoreDesAutres ET scoreCandidat1 => 12.5 ET scoreCandidat1 < 50
+    SINON SI scoreCandidat < scoreDesAutres
         ALORS
         ECRIRE "Le candidat 1 est en ballotage défavorable."
      
