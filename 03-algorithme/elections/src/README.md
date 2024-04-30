@@ -8,6 +8,7 @@ Les élections législatives, en Guignolerie Septentrionale, obéissent à la r�
 Vous devez écrire un algorithme qui permet la saisie des scores de quatre candidats au premier tour.
 
 Cet algorithme traitera ensuite le candidat numéro 1 (et uniquement lui) : il dira s’il est élu, battu, s’il se trouve en ballottage favorable (il participe au second tour en étant arrivé en tête à l’issue du premier tour) ou défavorable (il participe au second tour sans avoir été en tête au premier tour).
+
 ```
 VARIABLES
     scoreCandidat1 est un NOMBRE REEL
