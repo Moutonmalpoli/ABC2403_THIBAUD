@@ -34,11 +34,12 @@ public class App {
 		else if (scoreCandidat1 < 50 && scoreCandidat1 >= 12.5) {
 			System.out.println("Le candidat 1 passe au second tour.");
 		}
-		else if(scoreCandidat1 < 12.5) {
+		else {
 			System.out.println("Le candidat 1 est éliminé.");
 		}
-		else if(scoreCandidat1 > scoreDesAutres) {
-			System.out.println("Le candidat1 est en ballotage favorable.");
+		
+		 if(scoreCandidat1 > scoreDesAutres) {
+			System.out.println("Le candidat 1 est en ballotage favorable.");
 			}
 		else if (scoreCandidat1 < scoreDesAutres) {
 			System.out.println("Le candidat 1 est en ballotage défavorable.");
