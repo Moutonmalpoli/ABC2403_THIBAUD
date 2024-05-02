@@ -373,5 +373,7 @@ TRAITEMENT
     SINON
         ECRIRE "invalide"                      
 
+    FINSI
+    
 
 ```
