@@ -40,19 +40,19 @@ public class App {
 			System.out.println("Vous benéficiez du tarif rouge");
 		}
 		
-		else if (ageConducteur > 25 && permis < 2 && accidents == 1 && assurance < 5 ) {
+		else if (ageConducteur >= 25 && permis < 2 && accidents == 1 && assurance < 5 ) {
 			System.out.println("Vous benéficiez du tarif rouge");
 		}
 		
-		else if (ageConducteur > 25 && permis < 2 && accidents == 1 && assurance > 5 ) {
+		else if (ageConducteur >= 25 && permis < 2 && accidents == 1 && assurance > 5 ) {
 			System.out.println("Vous benéficiez du tarif rouge");
 		}
 		
-		else if (ageConducteur > 25 && permis > 2 && accidents == 2 && assurance < 5 ) {
+		else if (ageConducteur >= 25 && permis > 2 && accidents == 2 && assurance < 5 ) {
 			System.out.println("Vous benéficiez du tarif rouge");
 		}
 		
-		else if (ageConducteur > 25 && permis > 2 && accidents == 3 && assurance > 5 ) {
+		else if (ageConducteur >= 25 && permis > 2 && accidents == 3 && assurance > 5 ) {
 			System.out.println("Vous benéficiez du tarif rouge");
 		}
 		
@@ -64,26 +64,26 @@ public class App {
 			System.out.println("Vous benéficiez du tarif orange");
 		} 
 		
-		else if (ageConducteur > 25 && permis < 2 && accidents == 0 && assurance < 5 ) {
+		else if (ageConducteur >= 25 && permis < 2 && accidents == 0 && assurance < 5 ) {
 			System.out.println("Vous benéficiez du tarif orange");
 		} 
 		
-		else if (ageConducteur > 25 && permis > 2 && accidents == 1 && assurance < 5 ) {
+		else if (ageConducteur >= 25 && permis > 2 && accidents == 1 && assurance < 5 ) {
 			System.out.println("Vous benéficiez du tarif orange");
 		}	
-		else if (ageConducteur > 25 && permis > 2 && accidents == 2 && assurance > 5 ) {
+		else if (ageConducteur >= 25 && permis > 2 && accidents == 2 && assurance > 5 ) {
 			System.out.println("Vous benéficiez du tarif orange");
 			} 
-		else if (ageConducteur > 25 && permis < 2 && accidents == 0 && assurance > 5 ) {
+		else if (ageConducteur >= 25 && permis < 2 && accidents == 0 && assurance > 5 ) {
 			System.out.println("Vous benéficiez du tarif vert");
 		} 
-		else if (ageConducteur > 25 && permis > 2 && accidents == 0 && assurance < 5 ) {
+		else if (ageConducteur >= 25 && permis > 2 && accidents == 0 && assurance < 5 ) {
 			System.out.println("Vous benéficiez du tarif vert");
 		} 
-		else if (ageConducteur > 25 && permis > 2 && accidents == 1 && assurance > 5 ) {
+		else if (ageConducteur >= 25 && permis > 2 && accidents == 1 && assurance > 5 ) {
 			System.out.println("Vous benéficiez du tarif vert");
 		} 
-		else if (ageConducteur > 25 && permis > 2 && accidents == 0 && assurance > 5 ) {
+		else if (ageConducteur >= 25 && permis > 2 && accidents == 0 && assurance > 5 ) {
 			System.out.println("Vous benéficiez du tarif bleu");
 		}
 		else if (ageConducteur < 25 && permis < 2 && accidents == 1 && assurance < 5 ) {
@@ -92,13 +92,13 @@ public class App {
 		else if (ageConducteur < 25 && permis < 2 && accidents >= 1 && assurance > 5 ) {
 			System.out.println("Votre demande d'assurance est refusée");
 		}
-		else if (ageConducteur > 25 && permis < 2 && accidents >= 1 && assurance < 5 ) {
+		else if (ageConducteur >= 25 && permis < 2 && accidents >= 1 && assurance < 5 ) {
 			System.out.println("Votre demande d'assurance est refusée");
 		}
-		else if (ageConducteur > 25 && permis > 2 && accidents >= 3 && assurance < 5 ) {
+		else if (ageConducteur >= 25 && permis > 2 && accidents >= 3 && assurance < 5 ) {
 			System.out.println("Votre demande d'assurance est refusée");
 		}
-		else if (ageConducteur > 25 && permis > 2 && accidents >= 4 && assurance > 5 ) {
+		else if (ageConducteur >= 25 && permis > 2 && accidents >= 4 && assurance > 5 ) {
 			System.out.println("Votre demande d'assurance est refusée");
 		}
 		sc.close();
