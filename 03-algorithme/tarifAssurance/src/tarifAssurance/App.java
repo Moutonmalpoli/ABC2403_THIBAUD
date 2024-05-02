@@ -33,58 +33,58 @@ public class App {
 		System.out.println("Vous êtes assuré chez nous depuis " + assurance + " ans");
 		
 		if (ageConducteur < 25 && permis < 2 && accidents == 0 && assurance < 5 ) {
-			System.out.println("Vous bénéficier du tarif rouge");
+			System.out.println("Vous benéficiez du tarif rouge");
 		}
 		
 		else if (ageConducteur < 25 && permis < 2 && accidents == 1 && assurance > 5 ) {
-			System.out.println("Vous bénéficier du tarif rouge");
+			System.out.println("Vous benéficiez du tarif rouge");
 		}
 		
 		else if (ageConducteur > 25 && permis < 2 && accidents == 1 && assurance < 5 ) {
-			System.out.println("Vous bénéficier du tarif rouge");
+			System.out.println("Vous benéficiez du tarif rouge");
 		}
 		
 		else if (ageConducteur > 25 && permis < 2 && accidents == 1 && assurance > 5 ) {
-			System.out.println("Vous bénéficier du tarif rouge");
+			System.out.println("Vous benéficiez du tarif rouge");
 		}
 		
 		else if (ageConducteur > 25 && permis > 2 && accidents == 2 && assurance < 5 ) {
-			System.out.println("Vous bénéficier du tarif rouge");
+			System.out.println("Vous benéficiez du tarif rouge");
 		}
 		
 		else if (ageConducteur > 25 && permis > 2 && accidents == 3 && assurance > 5 ) {
-			System.out.println("Vous bénéficier du tarif rouge");
+			System.out.println("Vous benéficiez du tarif rouge");
 		}
 		
 		else if (ageConducteur < 25 && permis < 2 && accidents == 0 && assurance > 5 ) {
-			System.out.println("Vous bénéficier du tarif orange");
+			System.out.println("Vous benéficiez du tarif orange");
 		}
 		
 		else if (ageConducteur < 25 && permis > 2 && accidents == 0 && assurance < 5 ) {
-			System.out.println("Vous bénéficier du tarif orange");
+			System.out.println("Vous benéficiez du tarif orange");
 		} 
 		
 		else if (ageConducteur > 25 && permis < 2 && accidents == 0 && assurance < 5 ) {
-			System.out.println("Vous bénéficier du tarif orange");
+			System.out.println("Vous benéficiez du tarif orange");
 		} 
 		
 		else if (ageConducteur > 25 && permis > 2 && accidents == 1 && assurance < 5 ) {
-			System.out.println("Vous bénéficier du tarif orange");
+			System.out.println("Vous benéficiez du tarif orange");
 		}	
 		else if (ageConducteur > 25 && permis > 2 && accidents == 2 && assurance > 5 ) {
-				System.out.println("Vous bénéficier du tarif orange");
+			System.out.println("Vous benéficiez du tarif orange");
 			} 
 		else if (ageConducteur > 25 && permis < 2 && accidents == 0 && assurance > 5 ) {
-			System.out.println("Vous bénéficier du tarif vert");
+			System.out.println("Vous benéficiez du tarif vert");
 		} 
 		else if (ageConducteur > 25 && permis > 2 && accidents == 0 && assurance < 5 ) {
-			System.out.println("Vous bénéficier du tarif vert");
+			System.out.println("Vous benéficiez du tarif vert");
 		} 
 		else if (ageConducteur > 25 && permis > 2 && accidents == 1 && assurance > 5 ) {
-			System.out.println("Vous bénéficier du tarif vert");
+			System.out.println("Vous benéficiez du tarif vert");
 		} 
 		else if (ageConducteur > 25 && permis > 2 && accidents == 0 && assurance > 5 ) {
-			System.out.println("Vous bénéficier du tarif bleu");
+			System.out.println("Vous benéficiez du tarif bleu");
 		}
 		else if (ageConducteur < 25 && permis < 2 && accidents == 1 && assurance < 5 ) {
 			System.out.println("Votre demande d'assurance est refusée");
