@@ -150,7 +150,7 @@ TRAITEMENT
         ECRIRE "Horaire invalide"
     SINON 
         ECRIRE "Dans 3 minutes il sera", hour ,"h", future "."
-
+    FINSI
 
 ```
 
@@ -179,7 +179,7 @@ TRAITEMENT
 
     SINON 
     facture = 0.10 
-
+    FINSI
     factureClient = nbrPhotocopies * facture
 RESULTAT
     ECRIRE "Pour", nbrphotocopie,"photocopies votre facture sera de ", factureClient, "euros", "."
@@ -249,7 +249,8 @@ TRAITEMENT
         ECRIRE "Le candidat 1 est en ballotage défavorable."
      
     SINON 
-    ECRIRE "Score invalide"  
+    ECRIRE "Score invalide" 
+    FINSI 
 ```
 # Exercice 2.7 : Tarif Assurance
 
@@ -268,3 +269,109 @@ Le tarif dépend de la situation du conducteur :
 De plus, pour encourager la fidélité des clients acceptés, la compagnie propose un contrat de la couleur immédiatement la plus avantageuse s’il est assuré depuis plus de cinq ans. Ainsi, s’il satisfait à cette exigence, un client normalement “vert” devient “bleu”, un client normalement “orange” devient “vert”, et le “rouge” devient orange.
 
 Ecrire l’algorithme permettant de saisir les données nécessaires (sans contrôle de saisie) et de traiter ce problème. Avant de se lancer à corps perdu dans cet exercice, on pourra réfléchir un peu et s’apercevoir qu’il est plus simple qu’il n’en a l’air (cela s’appelle faire une analyse !)…
+
+```
+VARIABLES
+    ageConducteur est un NOMBRE ENTIER
+    permis est un NOMBRE ENTIER
+    assurance est un NOMBRE ENTIER
+    accidents est un NOMBRE ENTIER
+
+TRAITEMENT
+    ECRIRE "Saisir votre age:"
+    LIRE ageConducteur
+
+    ECRIRE "Depuis combien d'années êtes-vous titulaire du permis ?"
+    LIRE permis
+
+    ECRIRE "Depuis combien d'années êtes-vous assuré chez nous ?"
+    LIRE assurance
+
+    ECRIRE "De combien d'accidents avez-vous été responsable ?"
+    LIRE accidents
+
+    SI ageConducteur < 25 ET permis < 2 ET accidents = 0 ET assurance < 5
+        ALORS 
+        ECRIRE "Vous bénéficier du tarif rouge."
+
+    SINON SI ageConducteur < 25 ET permis < 2 ET accidents = 1 ET assurance > 5
+        ALORS 
+        ECRIRE "Vous bénéficier du tarif rouge."
+
+    SINON SI ageConducteur > 25 ET permis < 2 ET accidents = 1 ET assurance < 5
+        ALORS 
+        ECRIRE "Vous bénéficier du tarif rouge." 
+    
+    SINON SI ageConducteur > 25 ET permis < 2 ET accidents = 1 ET assurance > 5
+        ALORS 
+        ECRIRE "Vous bénéficier du tarif rouge." 
+    
+    SINON SI ageConducteur > 25 ET permis > 2 ET accidents = 2 ET assurance < 5
+        ALORS    
+        ECRIRE "Vous bénéficier du tarif rouge"
+    
+    SINON SI ageConducteur > 25 ET permis > 2 ET accidents = 3 ET assurance > 5
+        ALORS    
+        ECRIRE "Vous bénéficier du tarif rouge"              
+
+    SINON SI ageConducteur < 25 ET permis < 2 ET accidents = 0 ET assurance > 5
+        ALORS 
+        ECRIRE "Vous bénéficier du tarif orange." 
+    
+    SINON SI ageConducteur < 25 ET permis > 2 ET accidents = 0 ET assurance < 5
+        ALORS 
+        ECRIRE "Vous bénéficier du tarif orange."
+
+    SINON SI ageConducteur > 25 ET permis < 2 ET accidents = 0 ET assurance < 5
+        ALORS 
+        ECRIRE "Vous bénéficier du tarif orange." 
+    
+    SINON SI ageConducteur > 25 ET permis > 2 ET accidents = 1 ET assurance < 5
+        ALORS    
+        ECRIRE "Vous bénéficier du tarif orange" 
+    
+    SINON SI ageConducteur > 25 ET permis > 2 ET accidents = 2 ET assurance > 5
+        ALORS    
+        ECRIRE "Vous bénéficier du tarif orange"             
+
+    SINON SI ageConducteur > 25 ET permis < 2 ET accidents = 0 ET assurance > 5
+        ALORS    
+        ECRIRE "Vous bénéficier du tarif vert"
+    
+    SINON SI ageConducteur > 25 ET permis > 2 ET accidents = 0 ET assurance < 5
+        ALORS    
+        ECRIRE "Vous bénéficier du tarif vert"
+    
+    SINON SI ageConducteur > 25 ET permis > 2 ET accidents = 1 ET assurance > 5
+        ALORS    
+        ECRIRE "Vous bénéficier du tarif vert"       
+    
+    SINON SI ageConducteur > 25 ET permis > 2 ET accidents = 0 ET assurance > 5
+        ALORS    
+        ECRIRE "Vous bénéficier du tarif bleu"       
+
+    SINON SI ageConducteur < 25 ET permis < 2 ET accidents >= 1 ET assurance < 5
+        ALORS
+        ECRIRE "Votre demande d'assurance est refusée"
+
+    SINON SI ageConducteur < 25 ET permis < 2 ET accidents >= 2 ET assurance > 5
+        ALORS
+        ECRIRE "Votre demande d'assurance est refusée"    
+    
+    SINON SI ageConducteur > 25 ET permis < 2 ET accidents >= 2 ET assurance < 5
+        ALORS
+        ECRIRE "Votre demande d'assurance est refusée"
+    
+    SINON SI ageConducteur > 25 ET permis > 2 ET accidents >= 3 ET assurance < 5
+        ALORS    
+        ECRIRE "Votre demande d'assurance est refusée"
+    
+    SINON SI ageConducteur > 25 ET permis > 2 ET accidents >= 4 ET assurance > 5
+        ALORS    
+        ECRIRE "Votre demande d'assurance est refusée"
+    
+    SINON
+        ECRIRE "invalide"                      
+
+
+```
