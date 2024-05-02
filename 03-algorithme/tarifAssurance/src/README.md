@@ -108,7 +108,7 @@ TRAITEMENT
         ALORS
         ECRIRE "Votre demande d'assurance est refusée"
     
-    SINON SI ageConducteur > 25 ET permis > 2 ET accidents >= 3 ET assurance < 5
+    ||SINON SI ageConducteur > 25 ET permis > 2 ET accidents >= 3 ET assurance < 5
         ALORS    
         ECRIRE "Votre demande d'assurance est refusée"
     
@@ -117,7 +117,8 @@ TRAITEMENT
         ECRIRE "Votre demande d'assurance est refusée"
     
     SINON
-        ECRIRE "invalide"                      
+        ECRIRE "invalide"
+    FINSI                          
 
 
 ```
