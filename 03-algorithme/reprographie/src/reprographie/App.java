@@ -16,8 +16,6 @@ public class App {
 		nbrPhotocopies = sc.nextInt();
 		sc.close();
 		
-		facture = 0.10;
-		
 		if (nbrPhotocopies > 10 && nbrPhotocopies <= 19){
 			facture = 0.09;
 		}
