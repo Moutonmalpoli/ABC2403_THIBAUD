@@ -101,6 +101,10 @@ public class App {
 		else if (ageConducteur >= 25 && permis > 2 && accidents >= 4 && assurance > 5 ) {
 			System.out.println("Votre demande d'assurance est refusée");
 		}
+		
+		else {
+			System.out.println("invalide");
+		}
 		sc.close();
 	}
 
