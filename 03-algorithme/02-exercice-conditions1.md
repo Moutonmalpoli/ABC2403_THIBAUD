@@ -139,13 +139,14 @@ TRAITEMENT
     ECRIRE "Et combien de minutes ?"
     LIRE minutes
 
-    SI hour est supérieur à 24 OU minutes est supérieur à 60
+    SI hour > 24 OU minutes > 60
         ALORS
         ECRIRE "Les données saisies sont invalides"
-
+    SINON
+        ECRIRE "Il est ", hour, "heure et "  minutes " minutes"
     future = minutes + 3
 
-    SI hour est supérieur à 24 OU future est supérieur à 60
+    SI hour > 24 OU future > 60
     ALORS 
         ECRIRE "Horaire invalide"
     SINON 
