@@ -18,49 +18,52 @@
 ```
 VARIABLE
   ageUser est un NOMBRE ENTIER
+  categorie est une CHAINE DE CARACTERE
 
 TRAITEMENT
     ECRIRE "Veuillez saisir votre âge: "
     LIRE ageUser
 
-RESULTAT
     SI ageUser < 5 ALORS
-    	ECRIRE "Vous êtes trop jeune"
+    	categorie:= "trop jeune"
     
 
-    SINON SI ageUser = 5 OU ageUser = 6 ALORS
-   	 	ECRIRE "Vous êtes débutant"
+    SINON SI ageUser < 7
+   	 	categorie:= "débutant"
     
 
-    SINON SI ageUser = 7 OU ageUser = 8 ALORS
-    	ECRIRE "Vous êtes poussin"
+    SINON SI ageUser < 9 ALORS
+    categorie:= "poussin"
     
 
-    SINON SI ageUser = 9 OU ageUser =10 ALORS
-    	ECRIRE "Vous êtes benjamin"
+    SINON SI ageUser < 11 ALORS
+    	categorie:= "benjamin"
     
 
-    SINON SI ageUser = 11 OU ageUser = 12 ALORS
-    	ECRIRE "Vous êtes pupille"
+    SINON SI ageUser < 13 ALORS
+    	categorie:= "pupille"
     
     
-    SINON SI ageUser = 13 OU ageUser = 14 ALORS
-    	ECRIRE "Vous êtes minime"
-    
-
-    SINON SI ageUser = 15 OU ageUser = 16 ALORS
-    	ECRIRE "Vous êtes cadet"
+    SINON SI ageUser < 15 ALORS
+    	categorie:= "minime"
     
 
-    SINON SI ageUser = 17 OU ageUser = 18 ALORS
-    	ECRIRE "Vous êtes junior"
+    SINON SI ageUser < 17 ALORS
+    	categorie:= "cadet"
     
 
-    SINON SI ageUser >= 19 ET ageUser =< 34 ALORS
-    	ECRIRE "Vous êtes sénior"
+    SINON SI ageUser < 19 ALORS
+    	categorie:= "junior"
     
 
-    SINON SI ageUser >= 35  ALORS
-    	ECRIRE "Vous êtes vétéran"
+    SINON SI ageUser < 34 ALORS
+    	categorie:= "sénior"
+    
+
+    SINON  ALORS
+    	categorie:= "vétéran"
     FINSI
+    
+ RESULTAT
+ 	ECRIRE "Votre catégorie est " , catégorie, "."
 ```
