@@ -4,6 +4,7 @@ public class App {
 
 	public static void main(String[] args) {
 		int ageUser;
+		String categorie;
 		Scanner sc;
 		
 		sc = new Scanner (System.in);
@@ -14,38 +15,40 @@ public class App {
 		sc.close();
 
 		if (ageUser < 5) {
-			System.out.println( "Vous êtes trop jeune");
+			categorie ="trop jeune";
 		
 			}
-			else if (ageUser == 5 || ageUser == 6) {
-				System.out.println( "Vous êtes débutant");
+			else if (ageUser < 7) {
+				categorie =  "débutant";
 			}
-			else if (ageUser == 7 || ageUser == 8) {
-				System.out.println( "Vous êtes poussin");
+			else if (ageUser < 9 ) {
+				categorie = "poussin";
 			}
-		 	else if (ageUser == 9 || ageUser == 10) {
-		 			System.out.println("Vous êtes benjamin");
+		 	else if (ageUser < 11) {
+		 		categorie ="benjamin";
 		 	}
-		 	else if (ageUser == 11 || ageUser == 12) {
-		 		System.out.println( "Vous êtes pupille");
+		 	else if (ageUser < 13) {
+		 		categorie = "pupille";
 		 	}
-		 	else if (ageUser == 13 || ageUser == 14) {
-		 		System.out.println( "Vous êtes minime");
+		 	else if (ageUser < 15) {
+		 		categorie ="minime";
 		 	
 		 	}	
-		 	else if (ageUser == 15 || ageUser == 16) {	
-		 		System.out.println("Vous êtes cadet");
+		 	else if (ageUser < 17) {	
+		 		categorie ="cadet";
 		 	}
-		 	else if (ageUser == 17 || ageUser == 18) {	
-		 		System.out.println("Vous êtes junior");
+		 	else if (ageUser < 19) {	
+		 		categorie ="junior";
 		 	}
 		 	else if (ageUser >= 19 && ageUser <= 34) {	
-		 		System.out.println("Vous êtes sénior");
+		 		categorie = "sénior";
 		 	}
 		 else {
-			System.out.println("Vous êtes vétéran");
+			 categorie ="vétéran";
 		 }
-			 
+		
+		
+		System.out.println("Votre catégorie est " + categorie + ".");
 	
 	}
 
