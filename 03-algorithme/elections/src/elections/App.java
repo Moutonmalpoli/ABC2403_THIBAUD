@@ -39,10 +39,10 @@ public class App {
 		}	
 		
 
-		if (scoreCandidat1 > 50 && scoreDesAutres <= 50) {
+		if (scoreCandidat1 > 50 ) {
 			System.out.println("Le candidat 1 est élu.");
 		}
-		else if (scoreCandidat1 < 50 && scoreCandidat1 >= 12.5) {
+		else if (scoreCandidat1 >= 12.5) {
 			System.out.println("Le candidat 1 passe au second tour.");
 		}
 		else {

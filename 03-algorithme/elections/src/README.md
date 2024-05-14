@@ -42,11 +42,11 @@ TRAITEMENT
     SINON
         ECRIRE "Le score du candidat 1 est de " scoreCandidat1   "%"
 
-    SI scoreCandidat1 > 50 ET scoreDesAutres <= 50
+    SI scoreCandidat1 > 50 
         ALORS
         ECRIRE "Le candidat 1 est élu."
 
-    SINON SI scoreCandidat1 < 50 ET scoreCandidat1 => 12.5
+    SINON SI scoreCandidat1 < 50
         ALORS
         ECRIRE "Le candidat 1 passe au second tour." 
 
