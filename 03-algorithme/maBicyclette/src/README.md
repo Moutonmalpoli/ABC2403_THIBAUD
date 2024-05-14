@@ -27,30 +27,35 @@ livreDispoBibliotheque est un BOOLEAN
 
 TRAITEMENT
 SI beauTemps ALORS
-	"J'irais faire un balade à bicyclette"
+	ECRIRE "Je vérifie l'état de mon vélo"
 		
 		SI veloOK ALORS
-		"Je vais jusqu'a l'étang en vélo"
+			ECRIRE "Je vais faire une balade en vélo"
 		SINON
-		"Je vais chez le garagiste"
+			ECRIRE "Je vais chez le garagiste"
 			
 			SI reparationImmediate ALORS
-			" Je vais jusqu'a l'étang en vélo"
+				ECRIRE " Je vais jusqu'a l'étang en vélo"
 			SINON
-			"Je vais a pied jusqu'a l'étang"
-			
+				ECRIRE "Je vais a pied jusqu'a l'étang"
+			FIN SI
+		FIN SI
 SINON
-"Je reste chez moi et je lis"
+	ECRIRE "Je reste chez moi et je lis"
 	
 	SI livrePossede ALORS
-	"Je m'installe dans mon fauteuil et je lis"
+		ECRIRE "Je m'installe dans mon fauteuil et je lis"
 	
 	SINON
-	"Je vais l'emprunter à la bibliothèque"
+		ECRIRE "Je vais l'emprunter à la bibliothèque"
 		
 		SI livreDispoBibliotheque ALORS
-			"Je l'emprunte "
+			ECRIRE "Je l'emprunte "
 		SINON
-			"J'emprunte un roman policier"	
-
+			ECRIRE "J'emprunte un roman policier"	
+		FIN SI
+			ECRIRE "Je rentre chez moi"
+		
+	FIN SI
+FIN SI
 ```
