@@ -17,6 +17,7 @@ LIRE nombreUser
 TANT QUE nombreUser != nombreReponse
 LIRE nombreUser
 
+RESULTAT
 SI nombreUser == nombreReponse ALORS
 ECRIRE "Bravo, vous avez réussi"
 
