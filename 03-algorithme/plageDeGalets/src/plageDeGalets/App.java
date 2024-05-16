@@ -14,10 +14,17 @@ public class App {
 		System.out.println("Saisir un nombre compris entre 10 et 20");
 		nombreUser = sc.nextInt();
 		
-
-
+		while (nombreUser > 20) {
+			System.out.println("Plus petit");
+			nombreUser = sc.nextInt();
+		}
+		while (nombreUser < 10) {
+			System.out.println("Plus grand");
+			nombreUser = sc.nextInt();
 		}
 		sc.close();
+
+		}
 	}
 
 
