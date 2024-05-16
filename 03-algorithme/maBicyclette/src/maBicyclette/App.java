@@ -9,7 +9,9 @@ public class App {
 		boolean reparationImmediate;
 		boolean livrePossede;
 		boolean livreDispoBibliotheque;
-		Scanner sc = new Scanner(System.in);
+		Scanner sc ;
+		
+		 sc = new Scanner(System.in);
 		
 		System.out.println("Est ce qu'il fait beau?");
 		beauTemps = sc.nextBoolean();
