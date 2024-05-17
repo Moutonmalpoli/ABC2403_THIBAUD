@@ -23,7 +23,11 @@ TANT QUE nombreUser > 20
 TANT QUE nombreUser < 10
 	ECRIRE "Plus grand"
 	LIRE nombreUser
-	
+
+SI nombreUser == nombreReponse ALORS
+	ECRIRE "Yes, you did it"
+SINON
+	ECRIRE "Perdu, réessayez"	
 
 
 ```
