@@ -22,6 +22,14 @@ public class App {
 			System.out.println("Plus grand");
 			nombreUser = sc.nextInt();
 		}
+		
+		if (nombreUser == nombreReponse) {
+			System.out.println("Yes, you did it");
+			
+		}
+		else {
+			System.out.println("Perdu, réessayez");
+		}
 		sc.close();
 
 		}
