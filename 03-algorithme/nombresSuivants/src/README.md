@@ -11,10 +11,23 @@ Les 10 nombres après 17 sont: 18, 19 ,20 ,21 ,22 ,23 ,24 ,25 ,26 ,27
 ```
 VARIABLES
 nombreUser est un ENTIER
+i est un ENTIER
 
+TRAITEMENT
 ECRIRE "Saisir un nombre"
 LIRE nombreUser
 
+(i = 0)
 
+ECRIRE "Les dix nombre suivants de ", nombreUser " sont:"
 
+TANT QUE i < 10
+	i++
+	nombreUser++
+	ECRIRE nombreUser
+FIN TANT QUE
+
+POUR i de 0 à 10, 
+	ECRIRE nombreUser
+FIN POUR
 ```
