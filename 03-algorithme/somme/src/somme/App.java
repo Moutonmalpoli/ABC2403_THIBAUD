@@ -15,7 +15,7 @@ public class App {
 		sc.close();
 
         somme = 0;
-        i = 1;
+        i = 0;
         while (i <= nombreUser) { 
 	    somme = somme + i;
 	    i = i + 1;
