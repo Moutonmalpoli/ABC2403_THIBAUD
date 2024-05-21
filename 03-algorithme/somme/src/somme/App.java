@@ -12,8 +12,7 @@ public class App {
 		
 		System.out.println("Saisir un nombre ");
 		nombreUser = sc.nextInt();
-		sc.close();
-
+		
         somme = 0;
         i = 0;
         while (i <= nombreUser) { 
@@ -22,6 +21,7 @@ public class App {
 	    
 	    }
         System.out.print("La somme des nombres jusque " + nombreUser + " est: " + somme);
+		sc.close();
 
 }
 	}
