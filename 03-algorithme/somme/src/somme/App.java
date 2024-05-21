@@ -12,7 +12,7 @@ public class App {
 		
 		System.out.println("Saisir un nombre ");
 		nombreUser = sc.nextInt();
-
+		sc.close();
 
         somme = 0;
         i = 1;
