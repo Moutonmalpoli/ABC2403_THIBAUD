@@ -20,10 +20,7 @@ public class App {
 	    somme = somme + i;
 	    i = i + 1;
 	    
-	    
-	    
-	    
-	}
+	    }
         System.out.print("La somme des nombres jusque " + nombreUser + " est: " + somme);
 
 }
