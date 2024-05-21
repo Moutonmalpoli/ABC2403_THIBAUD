@@ -20,14 +20,16 @@ public class App {
 			System.out.println(nombreUser);
 		}
 		*/
-		
+	sc.close();
+
 		for (i=0 ; i<10 ; i++  ) {
 			
 			nombreUser++;
 			System.out.print(", "+ nombreUser);
+			
+		
 		}
 		
-		sc.close();
 	}
 
 }
