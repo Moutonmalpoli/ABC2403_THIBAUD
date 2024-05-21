@@ -18,7 +18,7 @@ ECRIRE "Saisir un nombre"
 LIRE nombreUser
 
 (somme = 0)
-(i = 1)
+(i = 0)
 
 TANT QUE i <= nombreUser
 	somme = somme + i;
