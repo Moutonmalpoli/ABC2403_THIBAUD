@@ -17,7 +17,7 @@ public class App {
         i = 0;
         while (i <= nombreUser) { 
 	    somme = somme + i;
-	    i = i + 1;
+	    i++;
 	    
 	    }
         System.out.print("La somme des nombres jusque " + nombreUser + " est: " + somme);
