@@ -49,7 +49,6 @@ rendueMonnaie = sommeTotale - totalBillets
 totalBillets = nombreBillets * 5
 nombreBillets = 
 
-// Boucle pour saisir les prix des articles//
 
 TANT QUE prixArticle != 0
 	ECRIRE "Saisir un prix: "
@@ -58,36 +57,40 @@ TANT QUE prixArticle != 0
 	
 FIN TANT QUE
 
+TANT QUE prixArticle > 5
+	nombreBillets ++
+	
+FIN TANT QUE	
+
 
 ECRIRE "Le client doit payer: ",sommeTotale	" Euros."
 ECRIRE "Le client doit donner ", nombreBillets " de 5 euros soit ",totalBillets 	
 
 ECRIRE "Rendue monnaie: ", rendueMonnaie " euros"
 
-// Boucle qui détermine combien et quelles pièces rendre //
 
 
-TANT QUE rendueMonnaie > 2
+TANT QUE rendueMonnaie => 2
 	rendueMonnaie = rendueMonnaie - 2
 	nbrPiece2++
 FIN TANT QUE
 
-TANT QUE rendueMonnaie > 1
+TANT QUE rendueMonnaie => 1
 	rendueMonnaie = rendueMonnaie - 1
 	nbrPiece1++
 FIN TANT QUE
 
-TANT QUE rendueMonnaie > 0.50	
+TANT QUE rendueMonnaie => 0.50	
 	rendueMonnaie = rendueMonnaie - 0.50
 	nbrPiece050++
 FIN TANT QUE
 
-TANT QUE rendueMonnaie > 0.20
+TANT QUE rendueMonnaie => 0.20
 	rendueMonnaie = rendueMonnaie - 0.20
 	nbrPiece020++	
 FIN TANT QUE
 
-TANT QUE rendueMonnaie > 0.10	
+TANT QUE rendueMonnaie => 0.10	
 	rendueMonnaie = rendueMonnaie - 0.10	
 	nbrPiece010 ++	
 FIN TANT QUE	
