@@ -14,11 +14,28 @@ Y = n! / (p! * (n – p)!)
 
 Cet algorithme peut être écrit d’une manière simple, mais relativement peu performante. Ses performances peuvent être singulièrement augmentées par une petite astuce. Vous commencerez par écrire la manière la plus simple, puis vous identifierez le problème, et écrirez une deuxième version permettant de d’améliorer les performances de l’algorithme.
 
+
+
 ```
 VARIABLES
-nbrChevauxPartant est un ENTIER
-nbrChevauxJouer est un ENTIER
+ncp est un ENTIER
+ncj est un ENTIER
+ordre est un ENTIER
+desordre est un ENTIER
 
+
+
+TRAITEMENT
+ECRIRE "Saisir le nombre de chevaux partants: "
+LIRE ncp
+
+ECRIRE "Saisir le nombre de chevaux joués: "
+LIRE ncj
+
+
+ordre = ncp! / (ncp - ncj)
+desordre = ncp! / (ncj!*(ncp - ncj)!)
 
 
 ```
+
