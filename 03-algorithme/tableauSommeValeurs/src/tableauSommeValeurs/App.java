@@ -10,6 +10,21 @@ public class App {
 		float somme;
 		float [] tableau;
 		
+		/* 
+		tableau = new float[10];
+		tableau[0] = 13.37f;
+		tableau[1] = 14.5f;
+		tableau[2] = 9.4f;
+		tableau[3] = 987.456f;
+		tableau[4] = 1.01f;
+		tableau[5] = 3.45f;
+		tableau[6] = 0.02f;
+		tableau[7] = 7.45f;
+		tableau[8] = 42f;
+		tableau[9] = 99.99f; 
+		*/
+				
+		  
 		tableau = new float[]
 				{
 					13.37f,
@@ -21,8 +36,7 @@ public class App {
 					0.02f,
 					7.45f,
 					42f,
-					99.99f
-					
+					99.99f,
 				};
 		
 		somme = 0;
