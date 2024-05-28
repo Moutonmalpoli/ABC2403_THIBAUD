@@ -45,8 +45,8 @@ totalBillets est un ENTIER
 TRAITEMENT
 
 
-rendueMonnaie = sommeTotale - totalBillets
-totalBillets = nombreBillets * 5
+
+
 nombreBillets = 
 
 
@@ -57,11 +57,14 @@ TANT QUE prixArticle != 0
 	
 FIN TANT QUE
 
-TANT QUE prixArticle > 5
+TANT QUE sommeTotale => 5
 	nombreBillets ++
+	sommeTotale = sommeTotale - 5
 	
 FIN TANT QUE	
 
+totalBillets = nombreBillets * 5
+rendueMonnaie = sommeTotale
 
 ECRIRE "Le client doit payer: ",sommeTotale	" Euros."
 ECRIRE "Le client doit donner ", nombreBillets " de 5 euros soit ",totalBillets 	
