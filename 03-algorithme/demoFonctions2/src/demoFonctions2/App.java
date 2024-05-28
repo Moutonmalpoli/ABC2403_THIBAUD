@@ -4,6 +4,7 @@ public class App {
 
 	public static void main(String[] args) {
 		
+		toto Toto = new toto();
 		int a;
 		a = 20;
 		App.changerValeur(a);
@@ -11,8 +12,9 @@ public class App {
 	}
 	
 	public static void changerValeur(int a) {
+		
 		a = 30;
-
+		
 }
 	
 }
