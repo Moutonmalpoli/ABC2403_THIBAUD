@@ -59,9 +59,11 @@ public class App {
 	}
 	
 	public static String getMC2() {
-		String inventeur;
+		return "Einstein";
+		
+		/*String inventeur;
 		inventeur = "Einstein";
-		return inventeur;
+		return inventeur;*/
 	
 	}
 
@@ -72,7 +74,10 @@ public class App {
 		 
 	 }
 	 public static String askUser(String nom, String prenom) {
-		 
+		 /* String fullName = App.getFullName(prenom, nom);
+		 	String genius = App.getMC2();
+		 	return "Bonjour " + fullName + ". Connaissez-vous " + genius + " ?";
+		 	*/
 		 return "Bonjour, " + App.getFullName(prenom, nom) + ". Connaissez-vous " + App.getMC2() + " ?";
 	 }
 }
