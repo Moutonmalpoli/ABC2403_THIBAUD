@@ -5,8 +5,7 @@ public class App {
 	public static void main(String[] args) {
 		
 		toto Toto = new toto();
-		int a;
-		a = 20;
+		toto.a = 20 ;
 		App.changerValeur(a);
 		System.out.println(a);
 	}
