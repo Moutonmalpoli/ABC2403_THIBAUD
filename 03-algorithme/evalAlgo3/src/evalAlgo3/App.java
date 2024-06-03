@@ -11,7 +11,7 @@ public class App {
 		int pgvCarré;
 		int i;
 
-		numbers = new int[] { 2,48, 4, 1, 8, 6, 14, 23, 25, 7, 42 };
+		numbers = new int[] { 2, 4, 1, 8, 6, 14, 23, 25, 7, 42 };
 		moyenne = 0;
 		somme = 0;
 		pgv = 0;
