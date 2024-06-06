@@ -1,50 +1,55 @@
 package bouteilles;
 
 public class Bouteille {
-
-	String matiereContenue;
-	float contenanceEnL;
-	float contenanceEncl;
-	float contenuEnL;
-	float contenuEncl;
-	boolean ouvert;
 	
+	//attributes 
+	private String typeDeContenu;
+	private float contenanceEnL;
+	private float contenuEnL;
+	private boolean ouvert;
 	
-	public float donneContenanceEncl() {
-		
-		contenanceEncl = contenanceEnL - 100;
-		return contenanceEncl;
-	}
-	public float donneContenuEncl() {
-		contenuEncl = contenuEnL - 100;
-		return contenuEncl;
-	}
+	//access/modifier
 	
-	public boolean estPleine() {
-		
+	//constructor
+	
+	//constructeur par defaut
+	public Bouteille() {
+		typeDeContenu="H20";
+		contenanceEnL=1;
+		contenuEnL=1;
+		ouvert=false;
 	}
 	
-	public boolean fermer() {
+	//constructeur classique
+	
+	public Bouteille(float _contenanceEnL,float _contenuEnL,boolean _ouvert,String _typeDeContenu) {
 		
-		
+		// this refers to the object, not the class
+		this.contenanceEnL=_contenanceEnL;
+		this.contenuEnL=_contenuEnL;
+		this.ouvert=_ouvert;
+		this.typeDeContenu=_typeDeContenu;
 	}
-	public boolean ouvrir() {
+	
+	//constructeur par recopie ou de clonage
+	
+	public Bouteille(Bouteille _bouteilleARecopier) {
+		this.contenanceEnL=_bouteilleARecopier.contenanceEnL;
+		this.contenuEnL=_bouteilleARecopier.contenuEnL;
+		this.ouvert=_bouteilleARecopier.ouvert;
+		this.typeDeContenu=_bouteilleARecopier.typeDeContenu;
 		
 	}
 	
-	public boolean remplir() {
-		
+	//methods
+	
+	public float donneContenanceEncL() {
+		float result;
+		result = this.contenanceEnL*100;
+		return result;
+	
 	}
 	
-	public float remplir1() {
-		
-	}
 	
-	public boolean vider() {
-		
-	}
-	public float vider1() {
-		
-	}
 	}
 
