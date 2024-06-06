@@ -49,6 +49,11 @@ public class Bouteille {
 		return result;
 	
 	}
+	public float donneContenuEncL() {
+		float result;
+		result = this.contenuEnL*100;
+		return result;
+	}
 	
 	
 	}
