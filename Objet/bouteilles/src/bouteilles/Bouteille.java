@@ -54,7 +54,19 @@ public class Bouteille {
 		result = this.contenuEnL*100;
 		return result;
 	}
-	
+	public boolean ouvert() {
+		if (ouvert=true) {
+			
+		System.out.println("Impossible, la bouteille est déja ouverte");
+		return ;
+		}
+		else {
+			
+			ouvert = true;
+			System.out.println("La bouteille est ouverte");
+			return ouvert;
+		}
+	}
 	
 	}
 
