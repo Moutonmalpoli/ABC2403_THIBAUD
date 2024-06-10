@@ -25,7 +25,7 @@ public class Bouteille {
 	public Bouteille(float _contenanceEnL,float _contenuEnL,boolean _ouvert,String _typeDeContenu) {
 		
 		// this refers to the object, not the class
-		this.contenanceEnL=_contenanceEnL;
+		this.contenanceEnL= _contenanceEnL;
 		this.contenuEnL=_contenuEnL;
 		this.ouvert=_ouvert;
 		this.typeDeContenu=_typeDeContenu;
