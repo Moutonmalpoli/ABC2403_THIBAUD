@@ -7,18 +7,14 @@
 	<classpathentry kind="src" path="03-algorithme/catégorieFootbal/src"/>
 	<classpathentry kind="src" path="03-algorithme/demoFonctions/src"/>
 	<classpathentry kind="src" path="03-algorithme/demoFonctions2/src"/>
-	<classpathentry kind="src" path="03-algorithme/elections/src"/>
-	<classpathentry kind="src" path="03-algorithme/evalAlgo3/src"/>
 	<classpathentry kind="src" path="03-algorithme/exoFonction3/src"/>
 	<classpathentry kind="src" path="03-algorithme/exoFonctions/src"/>
 	<classpathentry kind="src" path="03-algorithme/exoFonctions2/src"/>
 	<classpathentry kind="src" path="03-algorithme/factorielle/src"/>
 	<classpathentry kind="src" path="03-algorithme/helloWorld/src"/>
-	<classpathentry kind="src" path="03-algorithme/helloYou/src"/>
 	<classpathentry kind="src" path="03-algorithme/insertionTableau/src"/>
 	<classpathentry kind="src" path="03-algorithme/insertionTableau2/src"/>
 	<classpathentry kind="src" path="03-algorithme/inversionde2Valeurs/src"/>
-	<classpathentry kind="src" path="03-algorithme/Java/src"/>
 	<classpathentry kind="src" path="03-algorithme/lesCourses/src"/>
 	<classpathentry kind="src" path="03-algorithme/maBicyclette/src"/>
 	<classpathentry kind="src" path="03-algorithme/nombresSuivants/src"/>
@@ -32,7 +28,6 @@
 	<classpathentry kind="src" path="03-algorithme/predireAvenir/src"/>
 	<classpathentry kind="src" path="03-algorithme/rechercheNombreTableau/src"/>
 	<classpathentry kind="src" path="03-algorithme/reprographie/src"/>
-	<classpathentry kind="src" path="03-algorithme/somme/src"/>
 	<classpathentry kind="src" path="03-algorithme/sommeValeurs2Tableaux/src"/>
 	<classpathentry kind="src" path="03-algorithme/suiteFibonacci/src"/>
 	<classpathentry kind="src" path="03-algorithme/tableauSommeValeurs/src"/>
