@@ -108,11 +108,14 @@ public class Bouteille {
 		
 	}
 	public boolean vider(float quantite) {
-		boolean retour= false;
+		boolean retour = false;
 		
-		if(this.ouvert == true && ) {
-			
+		if(this.ouvert == true && this.contenuEnL>=(quantite -this.contenanceEnL)) 
+		{
+			retour = true;
+			contenuEnL= contenuEnL - quantite;
 		}
+		return retour;
 		}
 }
 
