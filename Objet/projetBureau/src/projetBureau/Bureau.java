@@ -10,6 +10,6 @@ public class Bureau {
 	}
 	
 	public Bureau(BigDecimal _hauteurEnCM) {
-		hauteurEnCM= _hauteurEnCm;
+		hauteurEnCM= _hauteurEnCM;
 	}
 }
