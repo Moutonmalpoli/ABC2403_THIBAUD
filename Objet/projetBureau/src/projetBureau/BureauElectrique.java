@@ -1,14 +1,16 @@
 package projetBureau;
 
-public class BureauElectique extends Bureau{
+import java.math.BigDecimal;
+
+public class BureauElectrique extends Bureau{
 	private boolean branche;
 	
-	public BureauElectique() {
+	public BureauElectrique() {
 		super();
 		branche=false;
 	}
-	public BureauElectique(boolean _branche, BigDecimal _hauteurEnCM) {
+	public BureauElectrique(boolean _branche, BigDecimal _hauteurEnCM) {
 		super(_hauteurEnCM);
-		branche= _branche;
+		branche=_branche;
 	}
 }
