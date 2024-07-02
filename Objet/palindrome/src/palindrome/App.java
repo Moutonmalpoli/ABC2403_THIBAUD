@@ -5,11 +5,11 @@ public class App {
 	public static void main(String[] args) {
 	
 		String[]tab = new String[] {"L","A","V","A","L"};
-		boolean resultat=Palindromeoupaspalindrome(tab);
+		boolean resultat=palindromeOuPasPalindrome(tab);
 		System.out.println(resultat);
 		
 	}
-	public static boolean Palindromeoupaspalindrome(String[]tab){
+	public static boolean palindromeOuPasPalindrome(String[]tab){
 		
 		boolean estUnPalindrome = true;
 		int i;
