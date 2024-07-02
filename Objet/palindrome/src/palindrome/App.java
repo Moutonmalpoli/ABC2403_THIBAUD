@@ -1,0 +1,35 @@
+package palindrome;
+
+public class App {
+
+	public static void main(String[] args) {
+	
+		String[]tab = new String[] {"L","A","V","A","L"};
+		boolean resultat=Palindromeoupaspalindrome(tab);
+		System.out.println(resultat);
+		
+	}
+	public static boolean Palindromeoupaspalindrome(String[]tab){
+		
+		boolean estUnPalindrome = true;
+		int i;
+		int j;
+		
+		i=0;
+		j=tab.length-1-i;
+		
+		while (i<tab.length/2 && tab[i]==tab[j]) {
+			i++;
+			j=tab.length-1-i;
+			
+		}
+		if (tab[i]!=tab[j]) {
+			estUnPalindrome = false;
+		}
+		else {
+			estUnPalindrome= true;
+		}
+		return estUnPalindrome;
+	}
+	
+}
