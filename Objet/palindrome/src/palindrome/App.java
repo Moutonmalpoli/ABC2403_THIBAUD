@@ -23,7 +23,7 @@ public class App {
 			j=tab.length-1-i;
 			
 		}
-		if (tab[i]!=tab[j]) {
+		if (i!= tab.length/2) {
 			estUnPalindrome = false;
 		}
 		else {
